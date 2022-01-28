@@ -2,11 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 body{
     font-family: 'Poppins',sans-serif;
     height: 150vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.lgt-txt{
+    color: white;
+    border-color: white;
+}
+
+.drk-txt{
+    color: black;
+    border-color: black;
 }
 
 .App{
@@ -14,36 +26,72 @@ body{
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: #282D35;
+    /* background-color: #282D35; */
     text-align: center;
-    color: white;
+    /* color: white; */
     border-radius: 30px;
     box-shadow: 10px 10px 10px 0px rgba(135,132,132,0.65) inset;
     -webkit-box-shadow: 10px 10px 10px 0px rgba(135,132,132,0.65) inset;
     -moz-box-shadow: 10px 10px 10px 0px rgba(135,132,132,0.65) inset;
-}
-
-/* .image{
     position: relative;
 }
 
-.image button{
+.App.lgt-txt{
+    background-color: #282D35;
+}
+
+.App.drk-txt{
+    background-color: #fff;
+}
+
+.image span{
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 10px;
+    top: 10px;
     cursor: pointer;
+    font-size: 32px;
+    color: white;
+    z-index: 3;
+}
+
+/* .image span::before{
+    content: '';
+    position: absolute;
+    right: -4px;
+    top: -2px;
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border-radius: 50%;
+} */
+
+.image .modebg{
+    position: absolute;
+    right: 5.9px;
+    top: 8px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+/* .image span.lightmode{
+    visibility: visible;
+}
+
+.image span.darkmode{
+    visibility: hidden;
 } */
 
 .image img{
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 300px;
+    max-height: 300px;
     width: auto;
     height: auto;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    box-shadow: 10px 10px 10px 0px rgba(135,132,132,0.65) inset;
-    -webkit-box-shadow: 10px 10px 10px 0px rgba(135,132,132,0.65) inset;
-    -moz-box-shadow: 10px 10px 10px 0px rgba(135,132,132,0.65) inset;
+    border-radius: 30px;
+    padding: 15px;
+    padding-top: 22px;
+    
 }
 
 .intro h4{
@@ -52,10 +100,10 @@ body{
 }
 
 .intro a{
-    color: white;
+    /* color: white; */
     text-decoration: none;
     font-size: 10px;
-    border: 1px solid white;
+    border: 1px solid;
     border-radius: 20px;
     padding: 7px;
     transition: all 0.5s;
@@ -78,7 +126,7 @@ body{
 }
 
 .buttons button:hover{
-    transform: scale(1.09);
+    transform: scale(1.07);
     transition: all 0.5s;
 }
 
@@ -104,6 +152,11 @@ body{
     -moz-box-shadow: 0px 8px 12px 4px rgba(31,142,245,0.63);
 }
 
+.buttons .btn-icon{
+    font-size: 18px;
+    margin: -3.5px 5px;
+}
+
 .about{
     text-align: left;
     margin-bottom: 30px;
@@ -126,7 +179,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(44, 43, 43);
+    background-color: rgb(0, 0, 0);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     box-shadow: 10px 10px 10px 0px rgba(135,132,132,0.65) inset;
@@ -134,8 +187,15 @@ body{
     -moz-box-shadow: 10px 10px 10px 0px rgba(135,132,132,0.65) inset;
 }
 
-.socials button{
-    height: 20px;
-    width: 20px;
+.socials .icon{
+    height: 32px;
+    width: 24px;
     margin: 20px 16px;
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.socials .icon:hover{
+    color: white;
 }

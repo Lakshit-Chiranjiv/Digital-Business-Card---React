@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Intro = () => {
+const Intro = ({displayLightMode}) => {
     return (
         <div className="intro">
-          <h2>Lakshit Chiranjiv Sagar</h2>
+          <h2 className={!displayLightMode?"lgt-txt":"drk-txt"}>Lakshit Chiranjiv Sagar</h2>
           <h4>Full Stack Developer</h4>
-          <a href="#">My Website</a>
+          <a href="#" className={!displayLightMode?"lgt-txt":"drk-txt"}>My Website</a>
         </div>
       );
 };

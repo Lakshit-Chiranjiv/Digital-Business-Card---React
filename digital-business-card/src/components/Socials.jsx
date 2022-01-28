@@ -1,12 +1,13 @@
 import React from 'react';
+import { FaTwitterSquare,FaFacebookSquare,FaInstagramSquare,FaGithubSquare } from "react-icons/fa";
 
 const Socials = () => {
     return (
         <div className="socials">
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
+          <FaTwitterSquare className='icon'/>
+          <FaFacebookSquare className='icon'/>
+          <FaInstagramSquare className='icon'/>
+          <FaGithubSquare className='icon'/>
         </div>
       );
 };
