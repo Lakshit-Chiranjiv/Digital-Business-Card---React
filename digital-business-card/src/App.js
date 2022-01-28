@@ -18,7 +18,7 @@ function App() {
     <div className={!displayLightMode?"App lgt-txt":"App drk-txt"}>
       <Image modeHandler={modeHandler} displayLightMode={displayLightMode}/>
       <Intro displayLightMode={displayLightMode}/>
-      <Buttons/>
+      <Buttons displayLightMode={displayLightMode}/>
       <About displayLightMode={displayLightMode}/>
       <Socials/>
     </div>

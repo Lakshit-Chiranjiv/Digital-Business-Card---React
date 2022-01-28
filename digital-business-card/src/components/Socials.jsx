@@ -4,10 +4,10 @@ import { FaTwitterSquare,FaFacebookSquare,FaInstagramSquare,FaGithubSquare } fro
 const Socials = () => {
     return (
         <div className="socials">
-          <FaTwitterSquare className='icon'/>
-          <FaFacebookSquare className='icon'/>
-          <FaInstagramSquare className='icon'/>
-          <FaGithubSquare className='icon'/>
+          <a href="#"><FaTwitterSquare className='icon'/></a>
+          <a href="#"><FaFacebookSquare className='icon'/></a>
+          <a href="#"><FaInstagramSquare className='icon'/></a>
+          <a href="#"><FaGithubSquare className='icon'/></a>
         </div>
       );
 };
